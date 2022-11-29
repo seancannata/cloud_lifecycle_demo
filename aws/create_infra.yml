@@ -118,7 +118,7 @@
       amazon.aws.ec2_key:
         name: "{{ aws_vpc_name }}-{{aws_vpc_prefix }}-demo-key"
         region: "{{ aws_region }}"
-        key_material: "{{ aws_public_key }}"
+#        key_material: "{{ aws_public_key }}"
         state: present
         tags:
           owner: "{{ aws_vpc_name }}"
