@@ -114,14 +114,14 @@
           owner: "{{ aws_vpc_name }}"
           purpose: "{{ aws_purpose_tag }}"
 
-    - name: Create AWS keypair
-      amazon.aws.ec2_key:
-        name: "{{ aws_vpc_name }}-{{aws_vpc_prefix }}-demo-key"
-        region: "{{ aws_region }}"
+#    - name: Create AWS keypair
+#      amazon.aws.ec2_key:
+#        name: "{{ aws_vpc_name }}-{{aws_vpc_prefix }}-demo-key"
+#        region: "{{ aws_region }}"
 #        key_material: "{{ aws_public_key }}"
-        state: present
-        tags:
-          owner: "{{ aws_vpc_name }}"
-          purpose: "{{ aws_purpose_tag }}"
+#        state: present
+#        tags:
+#          owner: "{{ aws_vpc_name }}"
+#          purpose: "{{ aws_purpose_tag }}"
 
 #source: https://github.com/RedHatGov/product-demos/blob/main/collections/ansible_collections/demo/cloud/roles/aws/tasks/create_infra.yml
