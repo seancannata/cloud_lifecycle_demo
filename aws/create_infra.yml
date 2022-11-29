@@ -1,6 +1,6 @@
 
 ---
-- name: AWS provision RHEL 8 VM
+- name: Provision Infastrcture for AWS.
   hosts: localhost
   vars_files:
   - ./vars.yml
