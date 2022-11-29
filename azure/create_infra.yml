@@ -1,7 +1,7 @@
 
 
 ---
-- name: AWS provision RHEL 8 VM
+- name: Provision infastructure for Azure.
   hosts: localhost
   vars_files:
   - ./vars.yml
